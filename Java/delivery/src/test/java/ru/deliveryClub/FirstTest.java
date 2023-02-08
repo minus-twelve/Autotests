@@ -1,21 +1,10 @@
 package ru.deliveryClub;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FirstTest {
 
-    public ChromeDriver driver;
-
-    @Before
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-        driver = new ChromeDriver();
-        System.out.println("test start");
-    }
+public class FirstTest extends WebDriverSettings {
 
     @Test
     public void firstTest() {
@@ -32,10 +21,7 @@ public class FirstTest {
     }
 
 
-    @After
-    public void close() {
-        driver.quit();
-    }
+
 
 
 }
