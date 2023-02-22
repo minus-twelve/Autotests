@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import Select
 
 
 link="http://suninjuly.github.io/selects1.html"
+#https://suninjuly.github.io/selects2.html
 
 try:
    browser = webdriver.Chrome()
