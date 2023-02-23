@@ -13,7 +13,7 @@ try:
     button.click()
     message = browser.find_element(By.XPATH, "//div[@id='verify_message']")
     print(message.text)
-
+    assert "successful" in message.text
  
 
 finally:
