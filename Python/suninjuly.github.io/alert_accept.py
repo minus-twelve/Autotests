@@ -27,6 +27,7 @@ finally:
     input2 = browser.find_element(By.XPATH, "//button[contains(text(),'Submit')]").click()
     alert = browser.switch_to.alert
     print(alert.text)
+    #print(browser.switch_to.alert.text.split(': ')[-1])
     alert.accept()
 
     # закрываем браузер после всех манипуляций
