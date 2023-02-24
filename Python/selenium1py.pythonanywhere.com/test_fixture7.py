@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
-#pytest -s -v test_fixture6.py
+#pytest -s -v test_fixture7.py
 
 
 @pytest.fixture(scope="function")
