@@ -3,7 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
-#pytest -s -v -m smoke test_fixture5.py
+#pytest -s -v -m smoke test_fixture5.py 
+#pytest -s -v -m "smoke or regression" test_fixture5.py
+#need pytest.ini
 
 @pytest.fixture(scope="function")
 def browser():
