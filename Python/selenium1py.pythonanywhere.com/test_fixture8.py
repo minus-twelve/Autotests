@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
-#pytest -s -v test_fixture8.py
+#pytest -rx -v test_fixture8.py
 
 
 @pytest.fixture(scope="function")
@@ -25,7 +25,7 @@ class TestMainPage1():
         browser.get(link)
         browser.find_element(By.CSS_SELECTOR, ".basket-mini .btn-group > a")
 
-    @pytest.mark.xfail
+    @pytest.mark.xfail(reason="fixing this bug right now")
     def test_guest_should_see_search_button_on_the_main_page(self, browser):
         browser.get(link)
         browser.find_element(By.CSS_SELECTOR, "button.favorite")
