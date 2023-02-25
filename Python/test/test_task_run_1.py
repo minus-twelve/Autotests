@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 #pytest -v -m "smoke and not beta_users" test_task_run_1.py
+#need pytest.ini
 
 @pytest.fixture(scope="function")
 def browser():
